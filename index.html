@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>Ivan Soares Correia (Página Pessoal)</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@300&family=Montserrat&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <nav>
+            <ul>
+                <li><a href="#sobremim">Sobre Mim</a></li>
+                <li><a href="#servicos">Serviços</a></li>                
+                <li><a href="#atividades">Atividades Profissionais</a></li>
+                <li><a href="#portfolio">Portfólio de Fotografia</a></li>
+                <li><a href="#youtube">Canal de Jogos</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+        <main>
+            <h1>Currículo</h1>
+            <section>
+                <h2>Ivan Soares Correia</h2>
+                <p>
+                    Fotógrafo, Editor de Vídeos e Estudante de Engenharia de Software
+                </p>
+                <dl>
+                    <dt>Website</dt>
+                    <dd><a href="https://www.ivansoarescorreia.com">www.ivansoarescorreia.com</a></dd>
+                    <dt>Telefone</dt>
+                    <dd>55-22-99321-0090</dd>
+                </dl>
+            </section>
+
+            <article id="sobremim" class="full-bleed">
+                <header class="flex-header">
+                    <h2>Sobre Mim</h2>
+                </header>
+                <img src="images/prof-pic-s.jpg" class="my-picture" />
+                <p>
+                    Olá! Estou <em>muito</em> feliz em ter você aqui em meu site. Tenho 43 anos e estou iniciando uma nova etapa de minha carreira na área de Engenharia de Software. Trabalho como tradutor, fotógrafo e editor de vídeos desde o final dos anos 90.
+                </p>
+                <aside class="motto"><p><small>Vamos trocar experiências!</small></p></aside>
+                <footer>
+                    <a href="#contato">Contato</a>
+                </footer>
+            </article>
+
+            <section id="servicos">
+                <h2>Serviços</h2>
+                <ul class="resume-list">
+                    <li>Tradução Técnica (Português - Inglês - Português)</li>
+                    <li>Fotografia</li>
+                    <li>Edição de Imagens (Suite Adobe, PhotoRAW & On1)</li>
+                    <li>Edição de Vídeos (Suite Adobe)</li>
+                </ul>
+            </section>
+
+            <section id="atividades">
+                <h2>Atividades Profissionais</h2>
+                <ol class="resume-list">
+                    <li>
+                        Fotógrafo (Freelancer)<br>
+                        Ivan Soares Fotografia<br>
+                        2019 - Presente
+                    </li>
+                    <li>
+                        Editor de Vídeos (Freelancer)<br>
+                        2009 - Presente
+                    </li>
+                    <li>
+                        Tradutor (Freelancer)<br>
+                        2000 - Presente
+                    </li>
+                    <li>
+                        Secretário Auxiliar da Presidência<br>
+                        BNDES<br>
+                        2009 - 2012
+                    </li>
+                </ol>
+            </section>
+
+            <section id="portfolio" class="full-bleed">
+                <h2>Portfólio de Fotografia</h2>
+                <img src="./images/Foto1.JPG" class="anchor" alt="Criança" />
+                <img src="./images/Foto 2.JPG" alt="Mulher" />
+                <img src="./images/Foto 3.JPG" alt="Jovem" />
+                <img src="./images/Foto 4.JPG" alt="Colônia Espanhola" />
+                <img src="./images/Foto 5.JPG" alt="Dança" />
+            </section>
+
+            <section id="youtube">
+                <h2>Canal de Jogos</h2>
+                <p>
+                    Um de meus projetos paralelos preferidos, o canal Hurdrax Custos é dedicado aos jogos de computador como forma de arte. Nele posso exercitar como hobby minhas habilidades adquiridas como editor para publicidade e cinema.
+                </p>
+                <img src="images/YouTube.png" class="social_logo" />
+                <a href="https://www.youtube.com/channel/UCDUYZ60BGUIyhYbEzMoyv7g">Hurdrax Custos</a>
+            </section>
+
+            <section id="contato">
+                <h2>Contato</h2>
+                <form action="dosomething.html" method="POST">
+                    <p class="field">
+                        <label for="name" class="label-standard">Nome</label>
+                        <input type="text" id="name" name="name" required />
+                    </p>
+                    <p class="field">
+                        <label for="email" class="label-standard">Email</label>
+                        <input type="email" id="email" name="email" />
+                    </p>
+                    <p class="field">
+                        <label for="whycontacting" class="label-standard">Motivo do Contato</label>
+                        <select id="whycontacting" name="whycontacting">
+                            <option value="contrato">Preciso dos seus Serviços</option>
+                            <option value="estudo">Montar Grupo de Estudos</option>
+                        </select>
+                    </p>
+                    <p class="field">
+                        <label for="comments" class="label-standard">Comentários</label>
+                        <textarea id="comments" name="comments" rows="3"></textarea>
+                    </p>
+                    <fieldset class="resume-fieldset">
+                        <legend>Melhor Horário para Contato</legend>
+                        <p>
+                            <label for="contacttime1">Manhã</label>
+                            <input type="radio" id="contacttime1" name="contacttime" value="morning" />
+                        </p>
+                        <p>
+                            <label for="contacttime2">Tarde</label>
+                            <input type="radio" id="contacttime2" name="contacttime" value="afternoon" />
+                        </p>
+                        <p>
+                            <label for="contacttime3">Noite</label>
+                            <input type="radio" id="contacttime3" name="contacttime" value="evening" />
+                        </p>
+                        <p>
+                            <label for="asap">URGENTE</label>
+                            <input type="checkbox" id="asap" name="asap" />
+                        </p>
+                    </fieldset>
+                    <p>
+                        <button type="submit" class="button">Enviar</button>
+                    </p>
+                </form>
+            </section>
+        </main>
+    </body>
+</html>
